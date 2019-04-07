@@ -1,4 +1,7 @@
-TweenMax.to(".clock", 25, {opacity:7, scale:2.5, ease:Bounce.easeOut});
+TweenMax.to(".clock", 20, {opacity:7, scale:2.5, ease:Bounce.easeOut});
+TweenMax.to(".info", 5, {y:-40});
+TweenMax.to(".date", 8, {y:-50});
+
 
 //Get todays date
 
@@ -48,8 +51,8 @@ function changePicture() {
         PictureStartTime.setSeconds(0);
     var PictureEndTime = new Date();
         PictureEndTime.setHours(20);
-        PictureEndTime.setMinutes(0);
-        PictureEndTime.setSeconds(0);
+        PictureEndTime.setMinutes(44);
+        PictureEndTime.setSeconds(00);
 
     if (PictureStartTime < now && PictureEndTime > now) {
         document.getElementById("picture").src = "images/daytime.jpg" }
